@@ -86,7 +86,7 @@
       "indice_corretto": 0,
       "argomento": "Algebra e Funzioni",
       "trappole": {
-        "1": "Hai risolto l'equazione di secondo grado al numeratore x^2 - 4x + 3 = 0 trovando correttamente le radici x = 1 e x = 3, ma hai dimenticato di verificare il Campo di Esistenza (x^2 - 1 != 0 => x != +-1). Per x = 1 la frazione si annulla anche al denominatore (0/0), rendendola priva di significato."
+        "1": "Hai risolto l'equazione di secondo grado al numeratore x^2 - 4x + 3 = 0 trovando correttamente le radici x = 1 e x = 3, ma hai dimenticato di verificare il Campo di Esistenza (x^2 - 1 ≠ 0 => x ≠ ±1). Per x = 1 la frazione si annulla anche al denominatore (0/0), rendendola priva di significato."
       }
     },
     {
@@ -138,7 +138,7 @@
       "indice_corretto": 0,
       "argomento": "Esponenziali e Logaritmi",
       "trappole": {
-        "2": "Hai applicato erroneamente la proprietà del logaritmo del quoziente \\log(A/B) = \\log A - \\log B al quoziente di due logaritmi \\frac{\\log A}{\\log B}, scrivendo \\log_2(81/27) = \\log_2 3."
+        "2": "Hai applicato erroneamente la proprietà del logaritmo del quoziente $\\log(A/B) = \\log A - \\log B$ al quoziente di due logaritmi $\\frac{\\log A}{\\log B}$, scrivendo $\\log_2(81/27) = \\log_2 3$."
       }
     },
     {
@@ -173,8 +173,7 @@
       "indice_corretto": 4,
       "argomento": "Geometria Piana",
       "trappole": {
-        "2": "Hai calcolato l'altezza del triangolo h = 3\\sqrt{3}\\text{ cm} ed hai applicato la formula dell'area del rettangolo b * h = 6 * 3\\sqrt{3} = 18\\sqrt{3} oppure 18 * 3 = 27 senza dividere per 2.",
-        "0": "Hai dimenticato di dividere per 2 nel calcolo dell'area A = (b * h)/2 = (6 * 3\\sqrt{3})/2 = 9\\sqrt{3}, ottenendo 18\\sqrt{3}."
+        "0": "Hai dimenticato di dividere per 2 nel calcolo dell'area $A = (b * h)/2 = (6 * 3\\sqrt{3})/2 = 9\\sqrt{3}$, ottenendo $18\\sqrt{3}$."
       }
     },
     {
@@ -196,7 +195,7 @@
     },
     {
       "id": "MAT_10",
-      "testo": "Il prezzo di un prodotto aumenta del $20\\%$ nel primo anno e successivamente diminuisce del $20\\%$ nel secondo anno. Rispetto al prezzo iniziale, il prezzo finale risulta:",
+      "testo": "Il prezzo di un prodotto aumenta del 20% nel primo anno e successivamente diminuisce del 20% nel secondo anno. Rispetto al prezzo iniziale, il prezzo finale risulta:",
       "immagine_url": null,
       "opzioni": [
         "Invariato",
