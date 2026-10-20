@@ -16,7 +16,7 @@ from streamlit_autorefresh import st_autorefresh
 import extra_streamlit_components as stx
 
 # Configurazione Pagina
-st.set_page_config(page_title="Fisica FACILE - Simulatore TOLC-I", page_icon="🎓", layout="wide")
+st.set_page_config(page_title="Fisica FACILE - Simulatore TOLC-E", page_icon="🎓", layout="wide")
 
 # CSS globale: aumenta la dimensione del testo delle opzioni (st.radio) in
 # tutta l'app, dato che con il font di default risultava troppo piccolo.
@@ -178,7 +178,7 @@ if "tempo_fine_sezione" not in st.session_state:
 # SCHERMATA 0: VERIFICA LICENZA (GATEKEEPER)
 # ---------------------------------------------------------
 if not st.session_state.licenza_valida:
-    st.title("🎓 FISICA FACILE - Simulatore TOLC-I CISIA")
+    st.title("🎓 FISICA FACILE - Simulatore TOLC-E CISIA")
     st.subheader("Attivazione Prodotto")
     st.write("Inserisci la tua **License Key** di Gumroad ricevuta via email al momento dell'acquisto per sbloccare la simulazione.")
 
@@ -251,7 +251,7 @@ if not st.session_state.licenza_valida:
 # ---------------------------------------------------------
 @st.cache_data
 def carica_dati():
-    with open("TOLC-I-Domande.json", "r", encoding="utf-8") as f:
+    with open("TOLC-E-Domande.json", "r", encoding="utf-8") as f:
         return json.load(f)
 
 data = carica_dati()
