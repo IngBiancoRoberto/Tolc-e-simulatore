@@ -1,0 +1,696 @@
+{
+  "test_info": {
+    "titolo": "Fisica Facile - Simulazione TOLC-E",
+    "punteggio_corretta": 1.0,
+    "punteggio_sbagliata": -0.25,
+    "punteggio_omessa": 0.0
+  },
+  "fasce_punteggio": [
+    {
+      "punteggio_min": null,
+      "punteggio_max": 12,
+      "posizionamento": "Sotto media",
+      "consiglio": "Hai ancora margine di miglioramento: alcuni concetti chiave e trappole comuni ti hanno tratto in inganno. Consulta subito il Manuale di Analisi & Spiegazioni PDF per studiare i passaggi svolti dei quesiti che hai sbagliato e rivedere la teoria di base."
+    },
+    {
+      "punteggio_min": 12,
+      "punteggio_max": 18,
+      "posizionamento": "Fascia media",
+      "consiglio": "Buon risultato di partenza! Possiedi le basi, ma hai perso punti preziosi su sviste o distrazioni. Rivedi le Trappole nel PDF per affinare la tua strategia e individuare subito i distrattori."
+    },
+    {
+      "punteggio_min": 18,
+      "punteggio_max": 25,
+      "posizionamento": "Fascia alta",
+      "consiglio": "Ottima prova! Hai una preparazione solida e una buona gestione dei tempi. Per puntare al massimo, apri il PDF e concentrati sui quesiti che hai sbagliato per perfezionare i passaggi più complessi."
+    },
+    {
+      "punteggio_min": 25,
+      "punteggio_max": null,
+      "posizionamento": "Fascia eccellenza (Top 10%)",
+      "consiglio": "Prestazione eccellente! Dominio totale dei contenuti e ottima gestione dello stress da timer. Fai un rapido ripasso di controllo sul PDF allegato per consolidare questo livello in vista del test ufficiale."
+    }
+  ],
+  "sezioni": [
+    {
+      "nome": "Matematica",
+      "tempo_minuti": 30,
+  "quesiti": [
+    {
+      "id": "MAT_01",
+      "testo": "Tra 12 anni l'età di Marco sarà il triplo dell'età che aveva 8 anni fa. Quanti anni ha oggi Marco?",
+      "immagine_url": null,
+      "opzioni": [
+        "16 anni",
+        "20 anni",
+        "18 anni",
+        "15 anni",
+        "22 anni"
+      ],
+      "indice_corretto": 2,
+      "argomento": "Problemi, Percentuali e Proporzionalità",
+      "trappole": {
+        "0": "Procedendo per tentativi senza equazione, provando 16 anni si potrebbe pensare: tra 16 anni ne avrà 28; 8 anni fa ne aveva 8, ed il triplo è 24. Notando uno scarto minimo (28 contro 24), la fretta induce a selezionare 16 credendo di aver commesso solo un piccolo errore d'arrotondamento.",
+        "3": "Impostando l'equazione erri nel distribuire il triplo, scrivendo x + 12 = 3x - 8 anziché 3(x - 8), ottenendo 2x = 20 e quindi x = 10, oppure sottraendo male i termini arrivi a 15 anni."
+      }
+    },
+    {
+      "id": "MAT_02",
+      "testo": "L'espressione numerica $\\frac{1 - \\sqrt{5}}{1 + \\sqrt{5}} + \\frac{1 + \\sqrt{5}}{1 - \\sqrt{5}}$ risulta uguale a:",
+      "immagine_url": null,
+      "opzioni": [
+        "$3$",
+        "$-2\\sqrt{5}$",
+        "$0$",
+        "$-1$",
+        "$-3$"
+      ],
+      "indice_corretto": 4,
+      "argomento": "Algebra e Funzioni",
+      "trappole": {
+        "2": "Hai notato la simmetria tra i termini della frazione e hai pensato d'impulso che si elidessero a vicenda per dare 0, trascurando il fatto che si tratta di una somma di due frazioni con denominatori diversi e negativi.",
+        "0": "Hai dimenticato il segno meno al denominatore comune (1+\\sqrt{5})(1-\\sqrt{5}) = 1 - 5 = -4, ottenendo +12 / +4 = 3 invece di 12 / -4 = -3."
+      }
+    },
+    {
+      "id": "MAT_03",
+      "testo": "Per quali valori della variabile reale $x$ si annulla la frazione algebrica $\\frac{x^2 - 4x + 3}{x^2 - 1}$?",
+      "immagine_url": null,
+      "opzioni": [
+        "Solo per $x = 3$",
+        "$x = 1$ e $x = 3$",
+        "Solo per $x = 1$",
+        "$x = -1$ e $x = 3$",
+        "Per nessun valore reale di $x$"
+      ],
+      "indice_corretto": 0,
+      "argomento": "Algebra e Funzioni",
+      "trappole": {
+        "1": "Hai risolto l'equazione di secondo grado al numeratore x^2 - 4x + 3 = 0 trovando correttamente le radici x = 1 e x = 3, ma hai dimenticato di verificare il Campo di Esistenza (x^2 - 1 != 0 => x != +-1). Per x = 1 la frazione si annulla anche al denominatore (0/0), rendendola priva di significato."
+      }
+    },
+    {
+      "id": "MAT_04",
+      "testo": "La parabola di equazione $y = x^2 - 6x + k$ interseca l'asse delle ascisse in un solo punto. Quanto vale il parametro $k$?",
+      "immagine_url": null,
+      "opzioni": [
+        "$36$",
+        "$-9$",
+        "$0$",
+        "$9$",
+        "$3$"
+      ],
+      "indice_corretto": 3,
+      "argomento": "Geometria Analitica",
+      "trappole": {
+        "0": "Hai calcolato (-6)^2 = 36 ed hai dimenticato di dividere per 4a = 4 nel porre il discriminante nullo \\Delta = 36 - 4k = 0, confondendo il quadrato del termine noto con il valore del parametro.",
+        "1": "Hai commesso un errore di segno nell'isolare k dall'equazione 36 - 4k = 0, scrivendo 4k = -36 => k = -9."
+      }
+    },
+    {
+      "id": "MAT_05",
+      "testo": "Quanti sono i punti d'intersezione tra il grafico dell'iperbole $y = \\frac{2}{x}$ e quello della retta $y = x - 1$?",
+      "immagine_url": null,
+      "opzioni": [
+        "Nessuno",
+        "Due",
+        "Uno",
+        "Tre",
+        "Infiniti"
+      ],
+      "indice_corretto": 1,
+      "argomento": "Geometria Analitica",
+      "trappole": {
+        "2": "Uguagliando le due funzioni hai considerato solo il ramo con x > 0 trovando il punto (2, 1) e dimenticando il secondo punto d'intersezione (-1, -2) sul ramo negativo dell'iperbole."
+      }
+    },
+    {
+      "id": "MAT_06",
+      "testo": "La frazione con logaritmi $\\frac{\\log_2 27}{\\log_2 81}$ è uguale a:",
+      "immagine_url": null,
+      "opzioni": [
+        "$\\frac{3}{4}$",
+        "$\\frac{1}{3}$",
+        "$\\log_2 3$",
+        "$\\frac{2}{3}$",
+        "$-\\log_2 54$"
+      ],
+      "indice_corretto": 0,
+      "argomento": "Esponenziali e Logaritmi",
+      "trappole": {
+        "2": "Hai applicato erroneamente la proprietà del logaritmo del quoziente \\log(A/B) = \\log A - \\log B al quoziente di due logaritmi \\frac{\\log A}{\\log B}, scrivendo \\log_2(81/27) = \\log_2 3."
+      }
+    },
+    {
+      "id": "MAT_07",
+      "testo": "Data la retta di equazione $3x + y - 6 = 0$, l'equazione della retta ad essa perpendicolare e passante per l'origine $(0,0)$ è:",
+      "immagine_url": null,
+      "opzioni": [
+        "$y = -3x$",
+        "$y = -\\frac{1}{3}x$",
+        "$y = \\frac{1}{3}x$",
+        "$y = 3x$",
+        "$y = \\frac{1}{3}x + 2$"
+      ],
+      "indice_corretto": 2,
+      "argomento": "Geometria Analitica",
+      "trappole": {
+        "0": "Hai preso il coefficiente angolare della retta data m = -3 e lo hai usato direttamente senza applicare la condizione di perpendicolarità m' = -1/m.",
+        "1": "Hai fatto l'inverso del coefficiente angolare 1/m = -1/3 dimenticando di cambiarne il segno (antireciproco)."
+      }
+    },
+    {
+      "id": "MAT_08",
+      "testo": "Un triangolo equilatero ha perimetro pari a $18\\text{ cm}$. La sua area è pari a:",
+      "immagine_url": null,
+      "opzioni": [
+        "$18\\sqrt{3}\\text{ cm}^2$",
+        "$36\\sqrt{3}\\text{ cm}^2$",
+        "$27\\text{ cm}^2$",
+        "$\\frac{9\\sqrt{3}}{2}\\text{ cm}^2$",
+        "$9\\sqrt{3}\\text{ cm}^2$"
+      ],
+      "indice_corretto": 4,
+      "argomento": "Geometria Piana",
+      "trappole": {
+        "2": "Hai calcolato l'altezza del triangolo h = 3\\sqrt{3}\\text{ cm} ed hai applicato la formula dell'area del rettangolo b * h = 6 * 3\\sqrt{3} = 18\\sqrt{3} oppure 18 * 3 = 27 senza dividere per 2.",
+        "0": "Hai dimenticato di dividere per 2 nel calcolo dell'area A = (b * h)/2 = (6 * 3\\sqrt{3})/2 = 9\\sqrt{3}, ottenendo 18\\sqrt{3}."
+      }
+    },
+    {
+      "id": "MAT_09",
+      "testo": "L'espressione esponenziale $2^{x+2} + 2^{x+1} + 2^x$ è uguale a:",
+      "immagine_url": null,
+      "opzioni": [
+        "$2^{3x+3}$",
+        "$7 \\cdot 2^x$",
+        "$6 \\cdot 2^x$",
+        "$2^{x+3}$",
+        "$8^x$"
+      ],
+      "indice_corretto": 1,
+      "argomento": "Esponenziali e Logaritmi",
+      "trappole": {
+        "0": "Hai applicato la regola degli esponenti per la moltiplicazione a^m * a^n = a^{m+n} a una somma di potenze (x+2)+(x+1)+x = 3x+3, sommando gli esponenti anziché raccogliere a fattor comune 2^x."
+      }
+    },
+    {
+      "id": "MAT_10",
+      "testo": "Il prezzo di un prodotto aumenta del $20\\%$ nel primo anno e successivamente diminuisce del $20\\%$ nel secondo anno. Rispetto al prezzo iniziale, il prezzo finale risulta:",
+      "immagine_url": null,
+      "opzioni": [
+        "Invariato",
+        "Diminuito del $4\\%$",
+        "Aumentato del $4\\%$",
+        "Diminuito del $2\\%$",
+        "Diminuito del $10\\%$"
+      ],
+      "indice_corretto": 1,
+      "argomento": "Problemi, Percentuali e Proporzionalità",
+      "trappole": {
+        "0": "Ti sei fidato dell'intuizione immediata pensando che +20% e -20% si annullino a vicenda (+20 - 20 = 0), ignorando che la riduzione del 20% si applica sul prezzo già maggiorato del primo anno."
+      }
+    },
+    {
+      "id": "MAT_11",
+      "testo": "Siano $P(x)$ e $Q(x)$ due espressioni definite per ogni $x$ reale tali che $P(x) > 0$ se e solo se $x > 3$, mentre $Q(x) > 0$ se e solo se $x < 1$. La disequazione $P(x) \\cdot Q(x) > 0$ è verificata per:",
+      "immagine_url": null,
+      "opzioni": [
+        "$x < 1$ oppure $x > 3$",
+        "$1 < x < 3$",
+        "$x > 3$",
+        "Per nessun valore reale di $x$",
+        "Le informazioni non sono sufficienti per rispondere"
+      ],
+      "indice_corretto": 1,
+      "argomento": "Algebra e Funzioni",
+      "trappole": {
+        "0": "Hai cercato l'intervallo in cui sia P(x) che Q(x) sono positivi, dimenticando che un prodotto è positivo anche quando entrambi i fattori sono negativi (ovvero per 1 < x < 3)."
+      }
+    },
+    {
+      "id": "MAT_12",
+      "testo": "Una botte contiene $100\\text{ litri}$ di una soluzione composta al $50\\%$ di acqua e al $50\\%$ di vino. Se si prelevano $20\\text{ litri}$ di tale miscela e si rimpiazzano con $20\\text{ litri}$ di sola acqua, quale percentuale di vino sarà contenuta nella miscela finale?",
+      "immagine_url": null,
+      "opzioni": [
+        "$40\\%$",
+        "$30\\%$",
+        "$35\\%$",
+        "$25\\%$",
+        "$45\\%$"
+      ],
+      "indice_corretto": 0,
+      "argomento": "Problemi, Percentuali e Proporzionalità",
+      "trappole": {
+        "1": "Hai sottratto l'intero volume di 20 litri dal vino anziché calcolare che nei 20 litri prelevati vi erano 10 litri di vino e 10 litri di acqua."
+      }
+    },
+    {
+      "id": "MAT_13",
+      "testo": "Per completare un lavoro di pavimentazione, una squadra di 6 operai impiega 12 giorni lavorando con ritmi identici. Se alla squadra si aggiungono altri 3 operai con la stessa produttività, quanti giorni saranno necessari per portare a termine lo stesso lavoro?",
+      "immagine_url": null,
+      "opzioni": [
+        "$9\\text{ giorni}$",
+        "$10\\text{ giorni}$",
+        "$6\\text{ giorni}$",
+        "$8\\text{ giorni}$",
+        "$15\\text{ giorni}$"
+      ],
+      "indice_corretto": 3,
+      "argomento": "Problemi, Percentuali e Proporzionalità",
+      "trappole": {
+        "0": "Aumentare di 3 unità il numero di operai non riduce in modo lineare di 3 giorni il tempo necessario. La relazione corretta è di proporzionalità inversa.",
+		"4": "Non ha senso che con più operai il tempo necessario si allunghi: la relazione corretta è di proporzionalità inversa"
+      }
+    }
+  ]
+    },
+    {
+      "nome": "Logica",
+      "tempo_minuti": 30,
+  "quesiti": [
+    {
+      "id": "LOG_01",
+      "testo": "Un regolamento di un istituto finanziario stabilisce che per concedere un mutuo è necessario che il richiedente abbia un contratto a tempo indeterminato e non abbia subito protesti cambiali. Questa norma non è stata rispettata nell'erogazione di una certa pratica. Possiamo affermare con certezza che:",
+      "immagine_url": null,
+      "opzioni": [
+        "Il richiedente non ha un contratto a tempo indeterminato e ha subito protesti cambiali.",
+        "Il richiedente ha un contratto a tempo determinato oppure ha subito protesti cambiali (o entrambe le cose).",
+        "Nessun cliente dell'istituto finanziario possiede un contratto a tempo indeterminato.",
+        "Il richiedente ha un contratto a tempo indeterminato ma ha subito certamente protesti cambiali.",
+        "Il mutuo erogato verrà immediatamente revocato dall'istituto."
+      ],
+      "indice_corretto": 1,
+      "argomento": "Logica Formale",
+      "trappole": {
+        "0": "**Hai sbagliato ad interpretare la frase** pensando che per violare una regola con la congiunzione \"e\" serva infrangere entrambe le condizioni contemporaneamente. Ti sei lasciato ingannare dal linguaggio comune: in logica formale la negazione di \"A e B\" è \"non A oppure non B\". Basterebbe anche solo una delle due mancanze per violare la regola!"
+      }
+    },
+    {
+      "id": "LOG_02",
+      "testo": "Un commerciante applica la seguente promozione mensile: per ogni giorno di sole riceve 15 euro di incentivo dal comune, mentre per ogni giorno di pioggia deve versare 30 euro per l'occupazione del suolo pubblico coperto. Alla fine del mese di aprile (30 giorni), il commerciante si trova in perfetto pareggio (0 euro). Per quanti giorni ha piovuto ad aprile?",
+      "immagine_url": null,
+      "opzioni": [
+        "10 giorni",
+        "20 giorni",
+        "15 giorni",
+        "12 giorni",
+        "8 giorni"
+      ],
+      "indice_corretto": 0,
+      "argomento": "Problemi Quantitativi",
+      "trappole": {
+        "1": "**Hai scambiato il valore dell'incognita**, calcolando i giorni di sole (20) anziché quelli di pioggia (10) richiesti dal testo.",
+        "2": "**Ti sei lasciato tentare dall'impulso** di dividere semplicemente a metà i 30 giorni del mese (15 e 15), ipotizzando una simmetria intuitiva che non sussiste, poiché l'incentivo (15 €) e la tassa (30 €) hanno pesi economici differenti! -"
+      }
+    },
+    {
+      "id": "LOG_03",
+      "testo": "Per scegliere il responsabile del personale tra cinque candidati (Amedeo, Bernardo, Carlo, Dario ed Enrico) si analizzano i loro anni di esperienza. Si sa che Amedeo ha più esperienza di Bernardo ma meno di Carlo. Dario ha meno esperienza di Enrico ma più di Carlo. Chi è il candidato con più anni di esperienza?",
+      "immagine_url": null,
+      "opzioni": [
+        "Carlo",
+        "Dario",
+        "Enrico",
+        "Amedeo",
+        "Bernardo"
+      ],
+      "indice_corretto": 2,
+      "argomento": "Relazioni d'Ordine",
+      "trappole": {
+        "0": "**Ti sei fermato a metà della lettura** della traccia! Hai notato che Carlo aveva più esperienza di Amedeo e Bernardo, ma non hai completato la concatenazione con i dati successivi relativi a Dario ed Enrico. -",
+        "1": "**Hai sbagliato a posizionare Dario**, legandolo a Carlo senza considerare che Enrico lo supera nettamente."
+      }
+    },
+    {
+      "id": "LOG_04",
+      "testo": "Tutti i consulenti finanziari sono laureati in economia. Nessun laureato in economia lavora come falegname. Alcuni falegnami sono appassionati di scacchi. Cosa possiamo dedurre con certezza?",
+      "immagine_url": null,
+      "opzioni": [
+        "Tutti gli appassionati di scacchi sono laureati in economia.",
+        "Alcuni consulenti finanziari sono appassionati di scacchi.",
+        "Nessun appassionato di scacchi è un consulente finanziario.",
+        "Nessun consulente finanziario lavora come falegname.",
+        "Tutti i laureati in economia giocano a scacchi."
+      ],
+      "indice_corretto": 3,
+      "argomento": "Logica Deduttiva",
+      "trappole": {
+        "1": "**Hai inventato un legame diretto** tra consulenti finanziari e scacchi che le premesse non autorizzano in alcun modo.",
+        "2": "**Hai fatto un'estrapolazione del tutto indebita**. Il testo dice che \"alcuni falegnami sono appassionati di scacchi\", ma non esclude affatto che tra gli appassionati di scacchi vi possano essere anche laureati in economia o consulenti finanziari! -"
+      }
+    },
+    {
+      "id": "LOG_05",
+      "testo": "Su una bilancia a due piatti, 3 cubi rossi e 2 sfere blu sono in equilibrio con 1 cubo rosso e 6 sfere blu. Quante sfere blu servono per equilibrare esattamente 1 cubo rosso?",
+      "immagine_url": null,
+      "opzioni": [
+        "3 sfere blu",
+        "2 sfere blu",
+        "4 sfere blu",
+        "1 sfera blu",
+        "5 sfere blu"
+      ],
+      "indice_corretto": 1,
+      "argomento": "Problem Solving",
+      "trappole": {
+        "0": "**Hai fatto una sottrazione errata** confondendo i termini algebrici .",
+        "2": "**Ti sei fermato a metà dell'equazione** arrivando a e segnando 4, senza ridurre la relazione al singolo cubo rosso (). -"
+      }
+    },
+    {
+      "id": "LOG_06",
+      "testo": "Tutti i candidati che hanno superato il test scritto sono stati convocati per il colloquio orale. D'altra parte, tutti i candidati che non hanno superato il test scritto hanno presentato ricorso. Ne consegue necessariamente che:",
+      "immagine_url": null,
+      "opzioni": [
+        "Tutti i candidati che non hanno presentato ricorso sono stati convocati al colloquio orale.",
+        "Tutti i candidati che hanno presentato ricorso sono stati convocati al colloquio orale.",
+        "Nessun candidato convocato al colloquio orale ha presentato ricorso.",
+        "Tutti i candidati convocati al colloquio orale non hanno sostenuto il test scritto.",
+        "Chiunque abbia presentato ricorso è stato ammesso con riserva."
+      ],
+      "indice_corretto": 0,
+      "argomento": "Logica Formale",
+      "trappole": {
+        "1": "**Hai sbagliato ad invertire il verso dell'implicazione**. Sapere che \"chi non supera il test fa ricorso\" non significa affatto che tutti quelli che fanno ricorso vengano poi convocati all'orale! -",
+        "2": "**Ti sei lasciato ingannare dall'idea** che le due categorie (convocati all'orale e ricorrenti) si escludano a vicenda, ma chi ha superato il test potrebbe teoricamente aver fatto ricorso per altri motivi."
+      }
+    },
+    {
+      "id": "LOG_07",
+      "testo": "Di tutti i bilanci aziendali revisionati dalla società Alfa, quelli contenuti nel fascicolo K sono stati approvati. Sapendo che nel fascicolo K ci sono bilanci che presentano irregolarità contabili, ne possiamo dedurre che:",
+      "immagine_url": null,
+      "opzioni": [
+        "Nessun bilancio approvato presenta irregolarità contabili.",
+        "Tutti i bilanci revisionati dalla società Alfa presentano irregolarità contabili.",
+        "Qualche bilancio già approvato presenta irregolarità contabili.",
+        "I bilanci senza irregolarità contabili non sono stati ancora approvati.",
+        "Il fascicolo K contiene tutti i bilanci revisionati dalla società Alfa."
+      ],
+      "indice_corretto": 2,
+      "argomento": "Logica Deduttiva",
+      "trappole": {
+        "0": "**Hai confuso la logica formale del testo con il buon senso comune** (secondo cui i bilanci irregolari non dovrebbero essere approvati). Ricorda che nei test occorre attenersi rigorosamente alle premesse senza sovrapporre opinioni personali o etiche!"
+      }
+    },
+    {
+      "id": "LOG_08",
+      "testo": "Un collezionista possiede 6 monete d'oro, 6 d'argento e 6 di bronzo conservate in tre scatole coperte. Per un blackout non può vedere i colori. Qual è il numero minimo di monete che deve estrarre complessivamente per essere matematicamente certo di avere almeno due monete dello stesso metallo?",
+      "immagine_url": null,
+      "opzioni": [
+        "3 monete",
+        "7 monete",
+        "13 monete",
+        "4 monete",
+        "18 monete"
+      ],
+      "indice_corretto": 3,
+      "argomento": "Problem Solving",
+      "trappole": {
+        "1": "**Hai confuso la richiesta del quesito**! 7 monete servirebbero per garantire di avere *3 monete dello stesso metallo* (caso peggiore: 2 oro, 2 argento, 2 bronzo + 1 = 7). Ma la traccia chiedeva soltanto *2 monete dello stesso metallo*! -",
+        "2": "**Hai calcolato l'estrazione necessaria per un colore fisso** (es. solo oro: 6 argento + 6 bronzo + 2 = 14)."
+      }
+    },
+    {
+      "id": "LOG_09",
+      "testo": "Un'azienda di software paga ai propri sviluppatori un compenso fisso mensile più un bonus di 50 euro per ogni bug risolto. A fine mese il programmatore Stefano riceve un compenso complessivo di 2.400 euro. Se Stefano avesse risolto 6 bug in meno, il suo compenso sarebbe stato inferiore del 12,5% rispetto a quello percepito. Qual è la quota fissa mensile dello stipendio di Stefano?",
+      "immagine_url": null,
+      "opzioni": [
+        "1.800 euro",
+        "1.900 euro",
+        "2.100 euro",
+        "1.500 euro",
+        "2.000 euro"
+      ],
+      "indice_corretto": 1,
+      "argomento": "Problemi Quantitativi",
+      "trappole": {
+        "0": "**Hai sottratto frettolosamente una percentuale errata** senza verificare il numero effettivo di bug risolti.",
+        "2": "**Hai calcolato lo stipendio ridotto** (2.100 euro) scambiandolo per la quota fissa iniziale. -"
+      }
+    },
+    {
+      "id": "LOG_10",
+      "testo": "Tre quinti dei soci di un club sportivo praticano il tennis e i tre quarti degli stessi soci praticano il nuoto. Possiamo dedurre con assoluta certezza che:",
+      "immagine_url": null,
+      "opzioni": [
+        "Almeno un socio pratica sia il tennis che il nuoto.",
+        "Almeno un terzo dei soci pratica sia il tennis che il nuoto.",
+        "Tutti i soci che praticano il tennis praticano anche il nuoto.",
+        "Nessun socio pratica contemporaneamente tennis e nuoto.",
+        "I soci che non praticano né tennis né nuoto sono più della metà."
+      ],
+      "indice_corretto": 0,
+      "argomento": "Logica Deduttiva",
+      "trappole": {
+        "2": "**Hai assunto che il gruppo più piccolo fosse interamente contenuto in quello più grande**, ma le premesse garantiscono solo una sovrapposizione parziale minima (35%), non un'inclusione totale. -",
+        "3": "**Hai ignorato il vincolo matematico delle frazioni** la cui somma supera il 100%!"
+      }
+    },
+    {
+      "id": "LOG_11",
+      "testo": "Tra le cinque affermazioni proposte in una perizia contabile, una sola è corretta e le altre quattro sono certamente false. Ne segue che:",
+      "immagine_url": null,
+      "opzioni": [
+        "Se un'affermazione è la negazione di un'altra, allora sono entrambe false.",
+        "Se un'affermazione implica un'altra, allora la prima è sicuramente vera.",
+        "Se due affermazioni della perizia sono tra loro equivalenti, allora sono entrambe false.",
+        "Se due affermazioni sono equivalenti, allora una delle due è vera.",
+        "Nessuna delle altre affermazioni è corretta."
+      ],
+      "indice_corretto": 2,
+      "argomento": "Logica Formale",
+      "trappole": {
+        "0": "**Hai dimenticato una regola fondamentale**: di due affermazioni contraddittorie (una la negazione dell'altra), una dev'essere necessariamente vera e l'altra falsa: non possono mai essere entrambe false!"
+      }
+    },
+    {
+      "id": "LOG_12",
+      "testo": "Un serbatoio d'acqua aziendale è riempito per il 40% della sua capienza. Aggiungendo 180 litri d'acqua, la percentuale di riempimento sale all'85%. Qual è la capienza totale del serbatoio?",
+      "immagine_url": null,
+      "opzioni": [
+        "360 litri",
+        "450 litri",
+        "500 litri",
+        "400 litri",
+        "300 litri"
+      ],
+      "indice_corretto": 3,
+      "argomento": "Problemi Quantitativi",
+      "trappole": {
+        "0": "**Hai raddoppiato frettolosamente i 180 litri** pensando che corrispondessero alla metà esatta della capienza della cisterna. -",
+        "1": "**Hai calcolato il 45% di 1000** invece di impostare la proporzione corretta ."
+      }
+    },
+    {
+      "id": "LOG_13",
+      "testo": "In un torneo di scacchi a 5 partecipanti, Matteo ha ottenuto un punteggio superiore a Nicola ma non superiore a Paolo. Stefano ha ottenuto un punteggio inferiore a Roberto ma non inferiore a Paolo. Chi si è classificato al penultimo posto della graduatoria?",
+      "immagine_url": null,
+      "opzioni": [
+        "Nicola",
+        "Matteo",
+        "Paolo",
+        "Stefano",
+        "Roberto"
+      ],
+      "indice_corretto": 1,
+      "argomento": "Relazioni d'Ordine",
+      "trappole": {
+        "0": "**Hai scambiato il penultimo posto (4°)** con l'ultimo posto in assoluto (5° Nicola). -",
+        "2": "**Ti sei confuso posizionando Paolo** al penultimo posto anziché al centro preciso della classifica."
+      }
+    }
+  ]
+    },
+    {
+      "nome": "Comprensione Verbale",
+      "tempo_minuti": 30,
+   "testi": [
+    {
+      "id": "TESTO_01",
+      "titolo": "L'intelligenza artificiale tra il paradosso della produttività e le metamorfosi del lavoro",
+      "corpo": "**[1]** Il dibattito contemporaneo sulle conseguenze macroeconomiche dell’intelligenza artificiale (IA) generativa richiama in modo sorprendente la celebre provocazione formulata nel 1987 dal premio Nobel Robert Solow: «I computer si vedono ovunque, tranne che nelle statistiche della produttività». A distanza di quasi quattro decenni, l’apparente discrepanza tra la pervasività dei nuovi modelli algoritmici e il modesto tasso di crescita della produttività aggregata continua a interrogare gli economisti. Gli studi condotti da Erik Brynjolfsson e Daron Acemoglu suggeriscono che questo fenomeno possa essere interpretato attraverso il modello della “J-curve della produttività”. Nella fase iniziale di adozione di una tecnologia ad ampio spettro (general-purpose technology), l’incremento di efficienza sistemica non è immediato: le imprese devono infatti sostenere ingenti investimenti immateriali, che spaziano dalla ristrutturazione dei processi aziendali alla riqualificazione del capitale umano. In questa fase transitoria, i costi di adattamento e l’allocazione di risorse per la riorganizzazione possono persino determinare un temporaneo stallo della produttività misurata, prima che si manifesti la curva ascendente dei benefici aggregati.\n\n**[2]** Sul fronte del mercato del lavoro, l’analisi dell’impatto dell’IA richiede di superare le rappresentazioni dicotomiche che contrappongono la catastrofica profezia della disoccupazione tecnologica di massa a un cieco ottimismo compensativo. Come evidenziato dalle più recenti rilevazioni dell’OCSE, l’intelligenza artificiale non agisce distruggendo in modo indistinto intere categorie professionali, bensì modificando la composizione interna delle singole mansioni (tasks). Diversamente dalle precedenti ondate di automazione industriale, che sostituivano prevalentemente il lavoro manuale e routinario, l’IA generativa penetra nei domini delle attività cognitive e ad alto contenuto conoscitivo. La questione centrale non risiede dunque nella pura eliminazione del fattore umano, ma nella dialettica tra l’effetto di spiazzamento (displacement effect) e l’effetto di complementarietà (augmentation effect). Qualora l’introduzione dell’IA sia orientata esclusivamente alla riduzione dei costi di lavoro tramite la mera automazione delle mansioni esistenti, l’impatto sull’occupazione e sui salari risulterà penalizzante; viceversa, se la tecnologia viene impiegata per estendere le capacità umane e stimolare la creazione di nuove attività complesse, l’aumento della produttività individuale si tradurrà in una riqualificazione positiva dell’occupazione.\n\n**[3]** A questo quadro si aggiunge una complessa dimensione redistributiva. I rapporti del Fondo Monetario Internazionale sottolineano come l’asimmetria nell’accesso alle tecnologie e la diversa preparazione delle strutture produttive rischino di accentuare i divari sia all’interno dei singoli paesi, sia a livello globale. Nelle economie avanzate, sebbene una quota elevata di lavoratori sia direttamente esposta all’automazione cognitiva, la presenza di infrastrutture digitali mature e di un elevato livello di scolarizzazione offre maggiori opportunità di assorbimento e riconversione. Al contrario, nei paesi a basso e medio reddito, la carenza di capitale umano specializzato e di reti tecnologiche adeguate limita la capacità di sfruttare l’IA come volano di sviluppo, esponendo tali mercati al rischio di una marginalizzazione competitiva accentuata.\n\n**[4]** In conclusione, la traiettoria futura della relazione tra intelligenza artificiale, produttività e occupazione non è scolpita in un determinismo tecnologico ineluttabile. L’esito finale dipenderà dalla natura delle scelte istituzionali e regolatorie. Una governance della transizione che incentivi la ricerca verso sistemi incentrati sulla complementarietà umana (human-centric AI), unita a politiche attive della formazione permanente, costituisce il presupposto indispensabile affinché l’innovazione algoritmica si trasformi in un volano di progresso socio-economico condiviso.",
+      "quesiti": [
+        {
+          "id": "COMP_IA_01",
+          "testo": "In base a quanto illustrato nel primo paragrafo del testo, il cosiddetto “paradosso della produttività” legato alle tecnologie ad ampio spettro:",
+          "immagine_url": null,
+          "opzioni": [
+            "dimostra l'impossibilità definitiva per l'IA di generare qualsiasi aumento di efficienza nelle economie avanzate.",
+            "conferma la teoria di Robert Solow secondo cui i computer non hanno mai prodotto alcun impatto economico reale.",
+            "è causato dalla fase transitoria in cui le imprese devono sostenere ingenti investimenti immateriali e riorganizzativi prima di vederne i benefici.",
+            "si manifesta con una riduzione immediata dei costi di capitale a fronte di un crollo dei salari dei lavoratori altamente qualificati.",
+            "dipende esclusivamente dalla riluttanza dei dipendenti pubblici ad adottare le nuove tecnologie algoritmiche."
+          ],
+          "indice_corretto": 2,
+          "argomento": "Comprensione verbale - Intelligenza artificiale e produttività",
+          "trappole": {
+            "1": "Risposta Trappola (Opzione B): Ti sei lasciato ingannare dalla menzione del “paradosso di Solow” e dalla citazione d’apertura: Solow formulò una provocazione storico-osservazionale, mentre il testo spiega che il fenomeno è transitorio e interpretabile con la J-curve."
+          }
+        },
+        {
+          "id": "COMP_IA_02",
+          "testo": "Nel secondo paragrafo, l’autore analizza l’impatto dell’IA generativa sul mercato del lavoro evidenziando che:",
+          "immagine_url": null,
+          "opzioni": [
+            "l'IA modifica la composizione interna delle singole mansioni (tasks), penetrando nelle attività cognitive ad alto contenuto conoscitivo.",
+            "l'effetto di spiazzamento (displacement) garantisce sempre e comunque una riqualificazione positiva dei salari.",
+            "l'automazione industriale del passato sostituiva il lavoro concettuale, mentre l’IA sostituisce solo il lavoro manuale.",
+            "l'automazione cognitiva distrugge in modo indolore intere professioni senza modificare le mansioni interne.",
+            "le rilevazioni dell’OCSE negano qualsiasi utilità dell'effetto di complementarietà (augmentation)."
+          ],
+          "indice_corretto": 0,
+          "argomento": "Comprensione verbale - Impatto dell'IA sul lavoro",
+          "trappole": {
+            "3": "Risposta Trappola (Opzione D): Hai invertito la direzione temporale e concettuale del cambiamento tecnologico: il testo afferma che l'IA NON distrugge intere professioni in modo indistinto, ma modifica le singole mansioni."
+          }
+        },
+        {
+          "id": "COMP_IA_03",
+          "testo": "In relazione all’impatto dell’IA sulle economie a basso e medio reddito, dal terzo paragrafo si evince che esse:",
+          "immagine_url": null,
+          "opzioni": [
+            "godono di un vantaggio competitivo rispetto ai paesi avanzati grazie all'assenza di lavoratori esposti all'automazione.",
+            "sono del tutto immuni dai rischi di automazione grazie alla presenza di infrastrutture digitali mature.",
+            "saranno le uniche a beneficiare dei finanziamenti del Fondo Monetario Internazionale per la formazione.",
+            "sfrutteranno l'IA per azzerare istantaneamente il divario economico con le nazioni sviluppate.",
+            "rischiano una maggiore marginalizzazione a causa della carenza di capitale umano specializzato e di reti tecnologiche adeguate."
+          ],
+          "indice_corretto": 4,
+          "argomento": "Comprensione verbale - Dimensione redistributiva dell'IA",
+          "trappole": {
+            "1": "Risposta Trappola (Opzione B): Hai fatto un’estrapolazione del tutto indebita partendo dalla minor esposizione iniziale: il testo spiega chiaramente che la mancanza di infrastrutture e capitale umano qualificato espone i paesi a basso/medio reddito al rischio di marginalizzazione."
+          }
+        },
+        {
+          "id": "COMP_IA_04",
+          "testo": "Secondo la ricostruzione del testo, affinché prevalga l’effetto di complementarietà (augmentation) sullo spiazzamento dei lavoratori, è necessario che:",
+          "immagine_url": null,
+          "opzioni": [
+            "l'IA sia impiegata esclusivamente per ridurre il costo del lavoro mediante l'automazione di mansioni ripetitive.",
+            "la tecnologia venga usata per estendere le capacità umane e stimolare la creazione di nuove attività complesse.",
+            "le imprese aboliscano del tutto le attività complesse per concentrarsi su mansioni puramente manuali.",
+            "i governi vietino qualsiasi investimento privato nelle tecnologie ad ampio spettro.",
+            "venga azzerata ogni forma di spesa pubblica per la formazione permanente."
+          ],
+          "indice_corretto": 1,
+          "argomento": "Comprensione verbale - Complementarietà vs Spiazzamento",
+          "trappole": {
+            "0": "Risposta Trappola (Opzione A): Hai selezionato la condizione opposta descritta dall'autore! Il testo precisa che la pura riduzione dei costi tramite automazione ha un impatto penalizzante su occupazione e salari."
+          }
+        },
+        {
+          "id": "COMP_IA_05",
+          "testo": "Qual è la tesi di fondo sostenuta nell’ultimo paragrafo del brano in merito al futuro del rapporto tra IA e lavoro?",
+          "immagine_url": null,
+          "opzioni": [
+            "L'evoluzione tecnologica segue un determinismo ineluttabile che rende inutile qualsiasi intervento regolatorio.",
+            "I sistemi di human-centric AI sostituiranno completamente le politiche attive di formazione permanente.",
+            "L'innovazione algoritmica condurrà inevitabilmente alla disoccupazione di massa in tutte le nazioni.",
+            "L'esito della transizione dipenderà dalle scelte istituzionali, da politiche di human-centric AI e dalla formazione permanente.",
+            "Le scelte istituzionali sono irrilevanti di fronte alla forza espansiva dei mercati digitali."
+          ],
+          "indice_corretto": 3,
+          "argomento": "Comprensione verbale - Governance e futuro dell'IA",
+          "trappole": {
+            "0": "Risposta Trappola (Opzione A): Hai scambiato una visione deterministica rifiutata dall'autore per la sua tesi finale! L'autore sostiene al contrario che la traiettoria NON è deterministica, ma dipende dalle scelte di governance."
+          }
+        }
+      ]
+    },
+    {
+      "id": "TESTO_02",
+      "titolo": "Dall’iper-globalizzazione al nuovo protezionismo: frammentazione e riconfigurazione del commercio globale",
+      "corpo": "**[1]** L’era dell’iper-globalizzazione, inaugurata negli anni Novanta con l’istituzione dell’Organizzazione Mondiale del Commercio (OMC) nel 1995 e culminata con l’ingresso della Cina nel 2001, ha rappresentato una fase di eccezionale integrazione economica planetaria. Il drastico abbattimento delle barriere tariffarie e la frammentazione internazionale dei processi produttivi hanno favorito la nascita delle catene globali del valore (Global Value Chains - GVC), consentendo alle imprese di delocalizzare le fasi di lavorazione secondo logiche di pura efficienza dei costi. Tuttavia, la grande crisi finanziaria del 2008 ha segnato un punto di svolta, inaugurando una fase che gli economisti definiscono di \"slowbalisation\". In questa fase, l’espansione del commercio internazionale ha smesso di crescere a tassi doppi rispetto al PIL globale, stabilizzandosi su ritmi decisamente più modesti a causa del soddisfacimento delle catene di fornitura esistenti e di un primo riemergere di resistenze protezionistiche.\n\n**[2]** A partire dalla seconda metà dello scorso decennio, la stasi si è trasformata in aperta riconfigurazione geoeconomica. L’esplosione delle tensioni commerciali tra Stati Uniti e Cina, contrassegnata dall’imposizione reciproca di ingenti dazi, ha scardinato l’illusione di un’integrazione commerciale neutrale e irreversibile. Successivamente, i drammatici shock sistemici rappresentati dalla pandemia di COVID-19 e dalle crisi geopolitiche in Europa e nel Medio Oriente hanno mostrato le vulnerabilità strutturali di catene di fornitura trasversali e iper-frammentate, modellate sulla sola logica del \"just-in-time\". La priorità strategica degli stati e delle grandi corporazioni si è così spostata dall’ottimizzazione dei costi alla ricerca della resilienza e della sicurezza economica. Questo cambio di paradigma ha dato impulso a dinamiche di \"near-shoring\" (rilocalizzazione delle filiere in paesi geograficamente vicini) e di \"friend-shoring\" (trasferimento della produzione in nazioni alleate o politicamente affini).\n\n**[3]** Questa transizione verso il protezionismo e la politica industriale attiva comporta tuttavia rischi significativi per l’economia globale. Come evidenziato dalle stime del Fondo Monetario Internazionale, una frammentazione geoeconomica severa rischia di generare rilevanti inefficienze sistemiche, riducendo le economie di scala e spingendo al rialzo le pressioni inflazionistiche. Nel lungo periodo, la scomposizione del commercio mondiale in blocchi contrapposti potrebbe causare una perdita del PIL globale fino al 7%, una contrazione equivalente alla somma delle economie di Francia e Germania. A subire le conseguenze più severe di questo ripiegamento protezionistico rischiano di essere le economie in via di sviluppo e i mercati emergenti, storicamente dipendenti dall’accesso ai mercati esteri e dagli investimenti diretti esteri per il proprio processo di rincorsa tecnologica e industriale.\n\n**[4]** Ciononostante, la riorganizzazione degli scambi internazionali racchiude anche opportunità per una crescita più bilanciata. La spinta verso la sovranità strategica e la regionalizzazione può favorire la costruzione di filiere produttive più brevi, trasparenti e sostenibili dal punto di vista ambientale. Inoltre, l’integrazione delle politiche commerciali con gli obiettivi di decarbonizzazione — come dimostrato dall’introduzione di meccanismi di regolazione del carbonio alle frontiere — offre l’opportunità di allineare gli scambi internazionali alla transizione ecologica. In ultima analisi, l’evoluzione del commercio mondiale non implica necessariamente la fine della cooperazione, bensì la necessità di un nuovo multilateralismo pragmatista, capace di coniugare la tutela della sicurezza nazionale con regole condivise che impediscano la degenerazione verso una spirale protezionistica distruttiva.",
+      "quesiti": [
+        {
+          "id": "COMP_COMM_01",
+          "testo": "Alla luce di quanto esposto nel primo paragrafo, la fase definita “slowbalisation”:",
+          "immagine_url": null,
+          "opzioni": [
+            "coincide con l'ingresso della Cina nell'OMC nel 2001 e con il massimo sviluppo delle catene globali del valore.",
+            "ha determinato il crollo immediato e totale delle delocalizzazioni industriali verso i paesi in via di sviluppo.",
+            "è stata provocata esclusivamente dalla guerra dei dazi esplosa negli anni Novanta tra Stati Uniti e Unione Europea.",
+            "corrisponde alla stasi della crescita del commercio mondiale, stabilizzatosi dopo la crisi del 2008 a ritmi paragonabili a quelli del PIL.",
+            "ha raddoppiato la velocità di espansione degli scambi internazionali rispetto alla crescita economica globale."
+          ],
+          "indice_corretto": 3,
+          "argomento": "Comprensione verbale - Evoluzione del commercio e slowbalisation",
+          "trappole": {
+            "0": "Risposta Trappola (Opzione A): Hai confuso la sequenza cronologica e causale del testo: l'ingresso della Cina nel 2001 appartiene all'apice dell'iper-globalizzazione, non alla slowbalisation iniziata dopo la crisi del 2008."
+          }
+        },
+        {
+          "id": "COMP_COMM_02",
+          "testo": "Nel secondo paragrafo, il passaggio dalla ricerca dell’efficienza alla ricerca della “resilienza” viene attribuito:",
+          "immagine_url": null,
+          "opzioni": [
+            "al fallimento economico di tutte le imprese che avevano localizzato la produzione in paesi alleati.",
+            "ai dazi USA-Cina, alla pandemia e alle crisi geopolitiche che hanno mostrato la vulnerabilità del modello just-in-time.",
+            "all'eliminazione totale di ogni dazio e barriera doganale tra Stati Uniti e Cina.",
+            "alla decisione dell'OMC di vietare qualsiasi forma di near-shoring e friend-shoring.",
+            "alla volontà dei paesi emergenti di chiudere le proprie frontiere agli investimenti esteri."
+          ],
+          "indice_corretto": 1,
+          "argomento": "Comprensione verbale - Riconfigurazione geoeconomica e resilienza",
+          "trappole": {
+            "2": "Risposta Trappola (Opzione C): Ti sei lasciato ingannare da un'inversione della realtà espressa dal testo: tra USA e Cina c'è stata una guerra commerciale con l'imposizione reciproca di ingenti dazi, non un'abolizione."
+          }
+        },
+        {
+          "id": "COMP_COMM_03",
+          "testo": "Secondo le stime del Fondo Monetario Internazionale citate nel terzo paragrafo, una severa frammentazione geoeconomica:",
+          "immagine_url": null,
+          "opzioni": [
+            "favorirebbe in modo uniforme le economie in via di sviluppo rispetto a quelle avanzate.",
+            "ridurrebbe l'inflazione grazie all'eliminazione delle barriere protezionistiche e dei sussidi.",
+            "azzererebbe completamente la necessità di investimenti diretti esteri nelle nazioni emergenti.",
+            "garantirebbe un aumento generalizzato dell'efficienza della produzione manifatturiera mondiale.",
+            "potrebbe causare una perdita del PIL globale fino al 7% nel lungo periodo a causa delle inefficienze sistemiche."
+          ],
+          "indice_corretto": 4,
+          "argomento": "Comprensione verbale - Rischi e impatti della frammentazione",
+          "trappole": {
+            "0": "Risposta Trappola (Opzione A): Hai attribuito al testo una tesi opposta a quella sostenuta dall'autore: le economie emergenti risultano particolarmente esposte e danneggiate dalla frammentazione."
+          }
+        },
+        {
+          "id": "COMP_COMM_04",
+          "testo": "Quale delle seguenti opportunità legate alla riorganizzazione del commercio internazionale viene esplicitamente menzionata nel quarto paragrafo?",
+          "immagine_url": null,
+          "opzioni": [
+            "La possibilità di costruire filiere produttive più brevi, sostenibili e meno esposte a shock geopolitici.",
+            "L'abbattimento totale di ogni forma di dazio ecologico alle frontiere commerciali.",
+            "Il definitivo superamento di qualsiasi esigenza di regolamentazione multilaterale degli scambi.",
+            "L'eliminazione automatica delle spinte protezionistiche nei paesi ad alto reddito.",
+            "La garanzia che la sicurezza nazionale non venga mai usata come pretesto per restrizioni commerciali."
+          ],
+          "indice_corretto": 0,
+          "argomento": "Comprensione verbale - Opportunità della regionalizzazione e sostenibilità",
+          "trappole": {
+            "4": "Risposta Trappola (Opzione E): Hai scambiato un monito sul rischio per un dato di fatto garantito: il testo avverte del pericolo che la tutela della sicurezza degeneri in protezionismo incontrollato."
+          }
+        },
+        {
+          "id": "COMP_COMM_05",
+          "testo": "Qual è la tesi di fondo sostenuta dall’autore nell’intero brano riguardo al futuro del commercio mondiale?",
+          "immagine_url": null,
+          "opzioni": [
+            "Il protezionismo rappresenta l'unica via per azzerare l'inflazione e garantire lo sviluppo dei paesi poveri.",
+            "La sicurezza nazionale impone l'immediata chiusura autarchica delle frontiere commerciali di ogni paese.",
+            "L'evoluzione del commercio verso filiere più resilienti e verdi richiede regole multilaterali condivise per evitare esiti protezionistici degenerativi.",
+            "L'iper-globalizzazione degli anni Novanta tornerà presto nella sua forma originaria senza alcuna modifica.",
+            "Le catene del valore regionali rendono ormai del tutto inutile l'esistenza di un quadro di regole multilaterali."
+          ],
+          "indice_corretto": 2,
+          "argomento": "Comprensione verbale - Tesi globale e governance multilaterale",
+          "trappole": {
+            "1": "Risposta Trappola (Opzione B): Hai estremizzato la posizione dell'autore trasformandola in un'ipotesi autarchica radicale: l'autore mette chiaramente in guardia contro la degenerazione protezionistica."
+          }
+        }
+      ]
+    }
+     ]
+   }
+  ]
+}
