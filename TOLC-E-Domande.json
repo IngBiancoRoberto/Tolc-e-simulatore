@@ -49,10 +49,7 @@
       ],
       "indice_corretto": 2,
       "argomento": "Problemi, Percentuali e Proporzionalità",
-      "trappole": {
-        "0": "Procedendo per tentativi senza equazione, provando 16 anni si potrebbe pensare: tra 16 anni ne avrà 28; 8 anni fa ne aveva 8, ed il triplo è 24. Notando uno scarto minimo (28 contro 24), la fretta induce a selezionare 16 credendo di aver commesso solo un piccolo errore d'arrotondamento.",
-        "3": "Impostando l'equazione erri nel distribuire il triplo, scrivendo x + 12 = 3x - 8 anziché 3(x - 8), ottenendo 2x = 20 e quindi x = 10, oppure sottraendo male i termini arrivi a 15 anni."
-      }
+      "trappole": {}
     },
     {
       "id": "MAT_02",
@@ -353,8 +350,7 @@
       "indice_corretto": 1,
       "argomento": "Problem Solving",
       "trappole": {
-        "0": "**Hai fatto una sottrazione errata** confondendo i termini algebrici .",
-        "2": "**Ti sei fermato a metà dell'equazione** arrivando a e segnando 4, senza ridurre la relazione al singolo cubo rosso (). -"
+        "2": "**Ti sei fermato a metà dell'equazione** arrivando a 2 Cubi=4 Sfere segnando 4, senza ridurre la relazione al singolo cubo rosso (2 sfere blu)."
       }
     },
     {
@@ -412,7 +408,7 @@
     },
     {
       "id": "LOG_09",
-      "testo": "Un'azienda di software paga ai propri sviluppatori un compenso fisso mensile più un bonus di 50 euro per ogni bug risolto. A fine mese il programmatore Stefano riceve un compenso complessivo di 2.400 euro. Se Stefano avesse risolto 6 bug in meno, il suo compenso sarebbe stato inferiore del 12,5% rispetto a quello percepito. Qual è la quota fissa mensile dello stipendio di Stefano?",
+      "testo": "Uno sviluppatore software riceve uno stipendio mensile composto da una quota fissa più un bonus per ogni bug risolto. In un mese in cui ha risolto 10 bug, il suo stipendio è stato di 2.400 euro. Se nel mese successivo ne avesse risolti 6 in meno, il suo stipendio totale sarebbe diminuito del 12,5%. A quanto ammonta la quota fissa del suo stipendio mensile?",
       "immagine_url": null,
       "opzioni": [
         "1.800 euro",
@@ -424,8 +420,7 @@
       "indice_corretto": 1,
       "argomento": "Problemi Quantitativi",
       "trappole": {
-        "0": "**Hai sottratto frettolosamente una percentuale errata** senza verificare il numero effettivo di bug risolti.",
-        "2": "**Hai calcolato lo stipendio ridotto** (2.100 euro) scambiandolo per la quota fissa iniziale. -"
+        "2": "**Hai calcolato lo stipendio ridotto** (2.100 euro) scambiandolo per la quota fissa iniziale."
       }
     },
     {
@@ -448,19 +443,19 @@
     },
     {
       "id": "LOG_11",
-      "testo": "Tra le cinque affermazioni proposte in una perizia contabile, una sola è corretta e le altre quattro sono certamente false. Ne segue che:",
+      "testo": "In un’indagine peritale su un dissesto finanziario vengono formulate cinque ipotesi (A, B, C, D, E). Si sa che esattamente una sola di queste ipotesi è vera. Inoltre si sa che se l’ipotesi A è vera, allora è vera anche l’ipotesi B, e se l’ipotesi B è vera, allora è vera anche l’ipotesi A. Cosa si può dedurre con certezza?",
       "immagine_url": null,
       "opzioni": [
-        "Se un'affermazione è la negazione di un'altra, allora sono entrambe false.",
-        "Se un'affermazione implica un'altra, allora la prima è sicuramente vera.",
-        "Se due affermazioni della perizia sono tra loro equivalenti, allora sono entrambe false.",
-        "Se due affermazioni sono equivalenti, allora una delle due è vera.",
-        "Nessuna delle altre affermazioni è corretta."
+        "L’ipotesi A è vera e l’ipotesi B è falsa",
+        "L’ipotesi B è vera",
+        "Sia l’ipotesi A sia l’ipotesi B sono false",
+        "L’ipotesi A e l’ipotesi B sono entrambe vere",
+        "L’ipotesi C è sicuramente vera"
       ],
       "indice_corretto": 2,
       "argomento": "Logica Formale",
       "trappole": {
-        "0": "**Hai dimenticato una regola fondamentale**: di due affermazioni contraddittorie (una la negazione dell'altra), una dev'essere necessariamente vera e l'altra falsa: non possono mai essere entrambe false!"
+        "0": "**Hai dimenticato una regola fondamentale**: di due affermazioni contraddittorie (una la negazione dell'altra), una deve essere necessariamente vera e l'altra falsa: non possono mai essere entrambe false!"
       }
     },
     {
